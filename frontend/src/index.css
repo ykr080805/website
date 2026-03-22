@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply overflow-x-hidden bg-[#FFFDFB] text-slate-800;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/30 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(244,114,182,0.08)] rounded-[2rem] transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #fdf2f8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fce7f3;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

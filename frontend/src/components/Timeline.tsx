@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 const generalPhotos = [
-  '/photos/general.jpeg',
-  '/photos/general1.jpeg',
-  '/photos/general2.jpeg',
+  '/photos/memory1.jpeg',
+  '/photos/memory2.jpeg',
+  '/photos/memory3.jpeg',
 ];
 
 const Timeline = ({ content }: { content: any[] }) => {
